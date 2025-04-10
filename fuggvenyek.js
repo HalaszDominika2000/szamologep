@@ -29,9 +29,9 @@ export function muvJel() {
     const JELSZOR = document.querySelector("#szorzas")
     const JELOSZT = document.querySelector("#osztas")
     const JELEGYENLO = document.querySelector("#egyenlo")
-    const JELTOROL = document.querySelector("#torles")
+    
     const JELPONT = document.querySelector("#pont")
-    let lista = [JELOSSZ, JELKIVON, JELSZOR, JELOSZT, JELEGYENLO, JELPONT, JELTOROL];
+    let lista = [JELOSSZ, JELKIVON, JELSZOR, JELOSZT, JELEGYENLO, JELPONT];
     return lista
     
     
@@ -47,6 +47,14 @@ export function szamOlas(lista) {
         
         
     }
+    
+    
+}
+export function torLes() {
+    const JELTOROL = document.querySelector("#torles")
+    JELTOROL.addEventListener("click", function() {
+        KIJELZO.innerHTML = "" /*Egyenlővé tesszük semmivel*/
+    })
     
     
 }
